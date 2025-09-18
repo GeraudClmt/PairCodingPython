@@ -11,3 +11,4 @@ def test_convert():
 def test_sorted_list():
     assert reformat_table([1,2,3,4,5]) == [1,2,"Fizz",4,"Buzz"]
     assert reformat_table([53,35]) == ["FizzBuzz","FizzBuzzBuzz"]
+

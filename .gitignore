@@ -1,2 +1,3 @@
-**.pyc
+# Fichiers compilés Python
+*.pyc
 __pycache__/

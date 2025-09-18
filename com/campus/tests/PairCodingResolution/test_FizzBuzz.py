@@ -1,14 +1,9 @@
 from com.campus.src.PairCodingResolution.FizzBuzz import convert, reformat_table
 
-def test_convert():
-    assert convert(3) == "Fizz"
-    assert convert(7) == 7
-    assert convert(5) == "Buzz"
-    assert convert(15) == "FizzBuzz"
-    assert convert(100) == "Buzz"
-
-
 def test_sorted_list():
-    assert reformat_table([1,2,3,4,5]) == [1,2,"Fizz",4,"Buzz"]
-    assert reformat_table([53,35]) == ["FizzBuzz","FizzBuzzBuzz"]
+    assert reformat_table([1,2,3,4,5]) == [1,2,"FizzFizz",4,"BuzzBuzz"]
+    assert reformat_table([53]) == ["FizzBuzz"]
+    assert reformat_table([52, 31]) == ["Buzz", "Fizz"]
+    assert reformat_table([7, 71, 19, 11, 14, 88]) == [7, 71, 19, 11, 14, 88]
+    assert reformat_table([55, 30, 35]) == ["BuzzBuzzBuzz", "FizzFizzBuzz", "FizzBuzzBuzz"]
 
